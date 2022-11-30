@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --purple: #4c6fff;
+    --lightpurple: #f0f5fa;
+    --lighterpurple: #f3f7fb;
+    --gray: #f7fafc;
+    --darker-gray: #cbd5e0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    background-color: var(--gray);
+    height: 100vh;
+    width: 50%;
+    padding: 30px 30px;
+    position: relative;
+}
+
+.right {
+    background-color: var(--white);
+    height: 100vh;
+    width: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 50px 0;
+}
+
+.center-circle {
+    background-color: var(--lightpurple);
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    /* border: 10px solid red; */
+    box-shadow: 0px 0px 0px 50px var(--lighterpurple);
+}
+
+.inner-circle {
+    height: 60%;
+    width: 60%;
+    background-color: var(--purple);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner-dashboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 10px rgb(247, 249, 251, .5);
+}
+
+.bottom-box {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.bottom-box p {
+    text-align: center;
+}
+
+.progress-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 100px;
+    height: 7px;
+    border-radius: 5px;
+}
+
+.progress-1 {
+    background-color: var(--purple);
+}
+
+.progress-2, .progress-3 {
+    background-color: var(--darker-gray);
+}
+
+.top-right-content {
+    text-align: center;
+}
+
+.right-content-wrapper {
+    background-color: var(--gray);
+    margin: 0 auto;
+    width: 60%;
+    padding: 50px 50px;
+}
+
+.register-form {
+    margin-top: 50px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-wrapper input {
+    padding: 15px 10px;
+    background-color: #fff;
+    border: none;
+}
+
+.password-instructions {
+    font-size: 12px;
+    color: var(--darker-gray);
+}
+
+.terms-conditions {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.terms-conditions p {
+    font-size: 13px;
+}
+
+.terms-conditions p span {
+    font-weight: bold;
+}
+
+.terms-conditions input {
+    align-self: flex-start;
+}
+
+.register-btn {
+    width: 100%;
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.register-option-text {
+    text-align: center;
+    font-size: 13px;
+}
+
+.register-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.register-options button {
+    border: none;
+    cursor: pointer;
+}
